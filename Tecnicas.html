@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tecnicas</title>
+  </head>
+  <body>
+    <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">SURREALISMO</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Historia.html">HISTORIA</a></li>
+          <li><a href="Artistas.html">ARTISTAS</a></li>
+          <li><a href="Galeria.html">GALERÍA</a></li>
+          <li><a href="Tecnicas.html">TÉCNICAS</a></li>
+        </ul>
+        <div class="nav__btns">
+          <a href="contacto.html" class="btn"><i class="ri-phone-line"></i></a>
+        </div>
+      </nav>
+
+
+    <div class="parallax__container">
+      <img src="assets/imagen-historia.jpg" alt="parallax" />
+      <img id="bg-2" src="assets/imagen-historia1.png" alt="parallax" />
+      <h1 id="title">Técnicas</h1>
+      <img id="bg-3" src="assets/imagen-historia2.png" alt="parallax" />
+    </div>
+
+    <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container bottomContainer">
+          <div class="ultimateImg">
+            <img class="mainImg" src="https://i.pinimg.com/564x/0b/7c/f7/0b7cf74b44de23f963e78b2bc44f8ea5.jpg">
+            <div class="purpleBox">
+              <p class="purpleText">
+                frottage (Max Ernst)
+              </p>
+            </div>
+          </div>
+          <div class="allText bottomText">
+            <p class="text-blk headingText">
+              Técnicas y procesos creativos
+            </p>
+            <p class="text-blk subHeadingText">
+              El automatismo *tecnica el cual el artista suprime el control consciente*  siempre funcionaba bien en otras formas de expresión artística, 
+              así que otras técnicas fueron usadas para alcanzar la anhelada espontaneidad de creación.
+            </p>
+            <p class="text-blk description">
+              Una de estas técnicas fue el frottage, que consistía en pasar un lápiz, por ejemplo, sobre una superficie rugosa, creando así formas y texturas en el soporte para crear una obra nueva a partir de ese material.
+
+              Otro ejemplo es la decalcomanía, una técnica en la cual cierta cantidad de tinta es arrojada contra un lienzo o papel. Esta superficie se dobla por la mitad y al abrirla nuevamente, muestra un patrón de tinta que 
+              sirve de material para crear una obra gracias a lo que provoca al nivel subconsciente.
+            </p>
+            <a class="explore">
+              Ver Más
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <script>
+    var title = document.getElementById("title");
+var bg_2 = document.getElementById("bg-2");
+var bg_3 = document.getElementById("bg-3");
+
+document.addEventListener("scroll", (event) => {
+  var positionY = window.scrollY;
+  title.style.fontSize = `${100 + positionY * 0.5}px`;
+  bg_2.style.top = `-${positionY * 0.5}px`;
+  bg_3.style.top = `-${positionY}px`;
+  bg_3.style.scale = 1 + positionY * 0.001;
+});
+</script>
+
+     <footer style="background-color: black; color: white; text-align: center; padding: 20px;">
+      <p>&copy; 2023 Surrealismo. Todos los derechos reservados.
+        ¡Gracias por visitar la pagina! 
+      </p>
+    </footer>
+</body>
+</html>

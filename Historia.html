@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Historia</title>
+  </head>
+  <body>
+    <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">SURREALISMO</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Historia.html">HISTORIA</a></li>
+          <li><a href="Artistas.html">ARTISTAS</a></li>
+          <li><a href="Galeria.html">GALERIA</a></li>
+          <li><a href="Tecnicas.html">TECNICAS</a></li>
+        </ul>
+        <div class="nav__btns">
+          <a href="contacto.html" class="btn"><i class="ri-phone-line"></i></a>
+        </div>
+      </nav>
+
+    <div class="parallax__container">
+      <img src="assets/Imagen-historia.jpg" alt="parallax" />
+      <img id="bg-2" src="assets/imagen-historia1.png" alt="parallax" />
+      <h1 id="title">Historia</h1>
+      <img id="bg-3" src="assets/imagen-historia2.png" alt="parallax" />
+    </div>
+
+
+    <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+          <p class="text-blk heading">
+            Surrealismo
+             1924–1966
+          </p>
+          <p class="text-blk subHeading">
+            El surrealismo emerge en París en 1924. Se esparce por Europa a pocos años de concluida la I Guerra Mundial hasta la llegada de la II 
+            guerra Mundial. Por ende, la influencia de este movimiento ha llegado hasta nuestros días.
+            
+          </p>
+          
+        </div>
+      </div>
+
+      <section>
+        <div class="circle circle1">
+          <img src="https://www.recreoviral.com/wp-content/uploads/2016/09/Ilustraciones-surrealistas-10.jpg" alt="" style="height: 100%;">
+        </div>
+        <div class="circle circle2">
+          <img src="https://lorenapanea.com/wp-content/uploads/sites/11115/2020/02/descarga.jpeg" alt="" style="height: 100%;">
+        </div>
+        <div>
+          <h2>¿Cómo Surgió?</h2>
+          <p class="parrafo-circulo"> André Breton fue el gurú del surrealismo. Poeta de vocación, se unió al dadaísmo, pero al perder fuelle este movimiento decidió que había que continuarlo mediante una base teórica sólida.
+
+            Breton había sido camillero en hospitales psiquiátricos durante la guerra, y ahí conoció tanto la obra de Sigmund Freud como conoció la extraña realidad oculta tras la locura.
+            
+            Breton quería, con esa locura como herramienta, unir eso de Rimbaud de «cambiar la vida» con eso de Marx de «transformar el mundo». Nace así el surrealismo que según su líder «se basa en la creencia en la realidad superior de ciertas formas de asociación desdeñadas hasta la aparición del mismo y en el libre ejercicio del pensamiento. Tiende a destruir definitivamente todos los restantes mecanismos psíquicos y a sustituirlos en la resolución de los principales problemas de la vida».
+            
+            En principio, esta vanguardia, aún viva hoy en día, quería incorporar los conceptos psicoanalíticos de Sigmund Freud a la mentalidad Dadá.
+            
+            De Freud interesaba sobre todo su investigación sobre el importante papel del subconsciente en el comportamiento humano, y por tanto en su faceta creativa.
+            
+            Por ello los surrealistas empezaron a dejar al subconsciente trabajar, ya fuera mediante escritura o pintura automática, por plasmar sueños, por regresar a la infancia… en definitiva por ser libre y espontáneo.
+            
+            Acceder al subconsciente significaba mostrar pensamientos y deseos indecorosos, plasmar imágenes chocantes para exponer la depravación del ser humano, disfrazado de civilizado por la sociedad burguesa.</p>
+        </div></p>
+     </section>
+
+    <script>
+    var title = document.getElementById("title");
+var bg_2 = document.getElementById("bg-2");
+var bg_3 = document.getElementById("bg-3");
+
+document.addEventListener("scroll", (event) => {
+  var positionY = window.scrollY;
+  title.style.fontSize = `${100 + positionY * 0.5}px`;
+  bg_2.style.top = `-${positionY * 0.5}px`;
+  bg_3.style.top = `-${positionY}px`;
+  bg_3.style.scale = 1 + positionY * 0.001;
+});
+</script>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+
+
+  </body>
+  <footer style="background-color: black; color: white; text-align: center; padding: 20px;">
+    <p>&copy; 2023 Surrealismo. Todos los derechos reservados.
+      ¡Gracias por visitar la pagina! 
+    </p>
+  </footer>
+</body>
+</html>
